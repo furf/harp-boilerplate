@@ -1,0 +1,41 @@
+@import '_common'
+@import '_site/normalize'
+@import '_site/fonts'
+
+
+/**
+ * Base element selectors (in alphabetical order)
+ */
+*
+  box-sizing border-box
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+
+a
+  text-decoration none
+
+abbr[title]
+  border-bottom none
+
+body
+  font-family Roboto
+  font-weight $FONT_LIGHT
+  font-size $BASE_FONT_SIZE
+  line-height $BASE_LINE_HEIGHT
+  margin 1em
+
+h1
+h2
+h3
+h4
+  font-family RobotoSlab
+
+/**
+ * SVG icons
+ * Icon class name and prefix should match svgstore prefix as configured in
+ * config/grunt.yml and icon class name in styles/_icons.styl
+ */
+svg.icon
+  width 1em
+  height 1em
+  vertical-align text-top

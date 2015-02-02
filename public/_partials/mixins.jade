@@ -1,0 +1,8 @@
+CURRENT_PATH = [''].concat(current.path.slice(0, -1)).join('/')
+
+//- Use an SVG icon compiled using svgstore
+mixin icon(name)
+  //- Icon class name and prefix should match svgstore prefix as configured in
+  //- config/grunt.yml and icon class name in styles/_icons.styl
+  svg(class="icon icon-#{name}")
+    use(xlink:href="#icon-#{name}")

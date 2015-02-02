@@ -1,0 +1,20 @@
+tasks:
+
+  harp:
+    server:
+      port: 9000
+    dist:
+      dest: build
+
+  imagemin:
+    optimizationLevel: 3
+    src: resources/images
+    dest: public/images
+
+  svgstore:
+    prefix: 'icon-'
+    src: resources/icons/*.svg
+    dest: public/_partials/icons.html
+
+  watch:
+    livereload: true

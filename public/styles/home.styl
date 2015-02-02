@@ -1,0 +1,34 @@
+@import '_common'
+
+
+/**
+ * Clock animation
+ */
+@keyframes alarm
+  from
+    transform rotate(-10deg)
+  to
+    transform rotate(10deg)
+
+svg.icon-clock
+  fill $MAGENTA
+  animation-name alarm
+  animation-direction alternate
+  animation-duration .1s
+  animation-iteration-count infinite
+
+
+/**
+ * Tweet button
+ */
+button.tweet
+  background $TWITTER_BLUE
+  color $WHITE
+  border 0
+  border-radius .25em
+  // padding .5em .667em .5em .5em
+  font-weight bold
+
+  .icon-twitter
+    fill white
+    margin-right .333em

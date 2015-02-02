@@ -1,0 +1,32 @@
+extends _layouts/default
+
+block title
+  title= project.name
+  
+append styles
+  link(rel="stylesheet", href="/styles/home.css")
+
+append scripts
+  script.
+    require(['pages/homepage'], function(initialize) {
+      console.log(arguments)
+      //- initialize({
+      //-   project: '#{project.name}'
+      //- });
+    });
+
+block content
+  include _partials/header
+
+  h2 Hello.
+  p This project is a WIP example of one way to build static websites.
+  
+  h2 Icons
+  ul
+    li: +icon('clock')
+
+  h2 Buttons
+  button.tweet
+    +icon('twitter')
+    span.label Tweet
+

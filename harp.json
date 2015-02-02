@@ -1,0 +1,11 @@
+{
+  "globals": {
+    "project": {
+      "title": "Harp Boilerplate",
+      "name": "harp-boilerplate",
+      "description": "A starting point for HUGE's Harp.js projects.",
+      "version": "1.0.0",
+      "license": "© 2014 Huge. All Rights Reserved."
+    }
+  }
+}
